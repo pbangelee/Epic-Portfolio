@@ -4,34 +4,169 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Angelee Marshall</title>
+<script>try{var v=sessionStorage.getItem('pt');if(v)document.documentElement.classList.add(v==='soft'?'entering-soft':'entering')}catch(e){}</script>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10Z' fill='%23d9432e'/%3E%3C/svg%3E">
+<meta property="og:title" content="Angelee Marshall — Portfolio">
+<meta property="og:description" content="Design and technology, with people at the center.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="angelee-photo.png">
+<meta name="description" content="Design and technology, with people at the center.">
+<noscript><style>.reveal,.reveal-fade,.reveal-left,.photo-wrap,.doodle{opacity:1!important;transform:none!important;filter:none!important}.doodle-line{clip-path:none!important}.doodle-arrow-path,.doodle-arrow-head{stroke-dashoffset:0!important}</style></noscript>
 </head>
 <body>
 
-<nav>
-  <a class="logo" href="index.html"><span class="logo-mark"></span>ANGELEE MARSHALL</a>
+<nav aria-label="Main">
+  <a class="logo" href="index.html#home"><span class="logo-mark"></span>ANGELEE MARSHALL</a>
   <ul>
     <li><a href="work.html"><span class="nav-num">01</span>Work</a></li>
-    <li><a href="about.html" class="active"><span class="nav-num">02</span>About</a></li>
+    <li><a href="about.html" class="active" aria-current="page"><span class="nav-num">02</span>About</a></li>
     <li><a href="resume.html"><span class="nav-num">03</span>Resume</a></li>
-    <li><a href="index.html#contact"><span class="nav-num">04</span>Contact</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>Contact</a></li>
   </ul>
   <div class="nav-progress"><div class="nav-progress-bar"></div></div>
 </nav>
 
-<header class="page-header reveal">
-  <h1>ABOUT</h1>
-  <p class="resume-subtitle">Design &amp; Technology Solutions</p>
-</header>
+<main>
+<section class="about-hero">
+  <div class="about-hero-text reveal">
+    <p class="about-kicker">About</p>
+    <h1 class="about-title" aria-label="Hi, I&rsquo;m Angelee"><span class="hi" aria-hidden="true">Hi, I&rsquo;m</span><span class="name-wrap" aria-hidden="true"><span class="name">Angelee</span><svg class="scribble" viewBox="0 0 300 18" preserveAspectRatio="none"><path pathLength="1" d="M4 11 C 50 3, 110 16, 170 8 S 262 5, 296 10"/></svg></span></h1>
+    <p class="about-lede">An Information Systems student at BYU&rsquo;s Marriott School of Business, originally from Hawaii.</p>
+    <ul class="about-facts" aria-label="Quick facts">
+      <li>Information Systems</li>
+      <li>BYU Marriott</li>
+      <li>From Hawaii</li>
+    </ul>
+  </div>
 
-<section class="about reveal">
-  <p>I bring together <span class="accent">design and technology</span> to build thoughtful, functional digital experiences with people at the center.</p>
+  <div class="about-photo reveal">
+    <svg class="deco-wave" viewBox="0 0 360 240" aria-hidden="true">
+      <g class="wave-lines" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+        <path d="M-160 95 Q-100 35-40 95 T80 95 T200 95 T320 95 T440 95 T560 95"/>
+        <path d="M-160 125 Q-100 65-40 125 T80 125 T200 125 T320 125 T440 125 T560 125" opacity=".38"/>
+        <path d="M-160 155 Q-100 95-40 155 T80 155 T200 155 T320 155 T440 155 T560 155" opacity=".16"/>
+      </g>
+    </svg>
+    <span class="deco-dot" data-parallax="-0.08" aria-hidden="true"></span>
+    <span class="sticker s1" data-parallax="0.07" aria-hidden="true">Hawaii</span>
+    <span class="sticker s2" data-parallax="-0.06" aria-hidden="true">builder</span>
+    <span class="sticker s3" data-parallax="0.04" aria-hidden="true">IS student</span>
+    <div class="about-arch">
+      <img src="angelee-about.jpg" alt="Angelee smiling with a white flower in her hair, standing by a mountain lake" width="900" height="1125">
+    </div>
+    <svg class="sparkle-static" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10L12 0Z" fill="currentColor"/></svg>
+    <span class="about-note" aria-hidden="true">hi! that&rsquo;s me</span>
+  </div>
 </section>
 
+<section class="about-curious reveal" aria-labelledby="making-title">
+  <h2 class="about-always" id="making-title">I&rsquo;m always making something.</h2>
+  <p>If I can imagine it, I can figure out how to make it.</p>
+</section>
+
+<section class="about-software" aria-labelledby="software-title">
+  <div class="section-intro reveal">
+    <h2 id="software-title">My favorite <em>software.</em></h2>
+  </div>
+  <div class="software-desktop reveal">
+    <div class="desktop-bar">
+      <span class="window-lights" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="desktop-title">Angelee&rsquo;s desktop</span>
+      <svg class="desktop-menu-star" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2 8 8 2-8 2-2 8-2-8-8-2 8-2Z" fill="currentColor"/></svg>
+    </div>
+    <div class="desktop-canvas">
+      <svg class="desktop-doodle doodle-star" viewBox="0 0 70 90" aria-hidden="true"><path d="m35 10 5 27 25 8-25 7-5 28-6-28-24-7 24-8Z M51 5l4 9M64 17l-9 3"/></svg>
+      <svg class="desktop-doodle doodle-loop" viewBox="0 0 90 100" aria-hidden="true"><path d="M72 15C22 2 5 34 28 56s51 15 39-7C55 30 22 44 21 78M13 70l8 10 10-8"/></svg>
+      <ul class="desktop-apps" aria-label="My favorite software">
+      <li class="desktop-app"><span class="app-icon app-photoshop"><img src="app-icons/photoshop.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Photoshop</span></li>
+      <li class="desktop-app"><span class="app-icon app-illustrator"><img src="app-icons/illustrator.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Illustrator</span></li>
+      <li class="desktop-app"><span class="app-icon app-lightroom"><img src="app-icons/lightroom.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Lightroom</span></li>
+      <li class="desktop-app"><span class="app-icon app-premiere"><img src="app-icons/premiere.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Premiere Pro</span></li>
+      <li class="desktop-app minecraft-shortcut"><span class="app-icon app-minecraft"><img src="app-icons/minecraft.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Minecraft</span></li>
+      <li class="desktop-app"><span class="app-icon app-fusion360"><img src="app-icons/fusion360.png" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Fusion 360</span></li>
+      <li class="desktop-app"><span class="app-icon app-claude"><img src="app-icons/claude.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Claude</span></li>
+      <li class="desktop-app"><span class="app-icon app-chatgpt"><img src="app-icons/chatgpt.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">ChatGPT</span></li>
+      <li class="desktop-app"><span class="app-icon app-vscode"><img src="app-icons/vscode.svg" alt="" width="64" height="64" loading="lazy"></span><span class="app-label">Visual Studio Code</span></li>
+      </ul>
+      <div class="minecraft-aside">
+        <svg class="minecraft-arrow" viewBox="0 0 300 90" aria-hidden="true"><path d="M290 20C250 0 140 -5 20 70M20 70l20-9M20 70l3-21"/></svg>
+        <svg class="minecraft-arrow-mobile" viewBox="0 0 100 200" preserveAspectRatio="none" aria-hidden="true"><path d="M20 190C65 155 50 70 5 10M5 10l3 19M5 10l18 6"/></svg>
+        <p>Had to sneak <br>this one in here.</p>
+      </div>
+      <svg class="desktop-doodle doodle-wave" viewBox="0 0 140 40" aria-hidden="true"><path d="M4 15q16-17 32 0t32 0t32 0t32 0M4 29q16-17 32 0t32 0t32 0t32 0"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="scrap" aria-labelledby="scrap-title">
+  <div class="section-intro reveal">
+    <p class="about-kicker">Beyond the screen</p>
+    <h2 id="scrap-title">My life <em>away from the screen</em></h2>
+    <p>Dance floors, glue guns, and 3D printers.</p>
+  </div>
+
+  <div class="scrap-wrap">
+    <p class="scrap-hint" aria-hidden="true">go ahead, drag them around
+      <svg viewBox="0 0 80 60"><path d="M6 8 C 40 2, 70 20, 66 52" /><path d="M66 52 L 54 42 M66 52 L 76 40" /></svg>
+    </p>
+
+    <div class="scrap-table reveal" data-scrap>
+      <figure class="polaroid p-jhb" style="--r:-3deg;--i:0" tabindex="0">
+        <span class="tape tape--red"></span>
+        <img src="about-photos/johannesburg.jpg" alt="People dancing in a Johannesburg church while children sit around the floor watching" width="1800" height="981" draggable="false">
+        <figcaption><b class="hand-caption">Connecting through dance</b><span>Cultural exchange at a Lutheran church in Johannesburg.</span></figcaption>
+      </figure>
+
+      <figure class="polaroid p-moana" style="--r:2.5deg;--i:1" tabindex="0">
+        <span class="tape"></span>
+        <img src="about-photos/moana.jpg" alt="Angelee dancing on a rocky shoreline in a blue off-shoulder dress, from the Noteworthy Moana music video" width="1024" height="430" draggable="false">
+        <figcaption><b class="hand-caption">A little movie magic</b><span>Performing in Noteworthy &times; Living Legends&rsquo; Moana music video. &middot; <a href="https://www.youtube.com/watch?v=T2nwu7vfRfE" target="_blank" rel="noopener">watch <span aria-hidden="true">&nearr;</span></a></span></figcaption>
+      </figure>
+
+      <figure class="polaroid p-costume" style="--r:-4deg;--i:2" tabindex="0">
+        <span class="tape"></span>
+        <img src="about-photos/costume.jpg" alt="Raffia dance costume pieces in progress on the carpet, with tape, glue gun, and feathers" width="1017" height="1024" draggable="false">
+        <figcaption><b class="hand-caption">Made for the stage</b><span>Costume pieces I worked on for a Tahitian dance performance.</span></figcaption>
+      </figure>
+
+      <figure class="polaroid p-maker" style="--r:3deg;--i:3" tabindex="0">
+        <span class="tape tape--red"></span>
+        <img src="about-photos/makerspace.jpg" alt="A large white 3D print on a Prusa printer, with more printers and a bust sculpture in the background" width="838" height="1024" draggable="false">
+        <figcaption><b class="hand-caption">Layer by layer</b><span>A glimpse of 3D printing and modeling at my Makerspace job.</span></figcaption>
+      </figure>
+
+      <div class="sticky-note" style="--r:-3deg;--i:4">
+        <b>always into:</b>
+        <ul><li>dancing</li><li>arts &amp; crafts</li><li>video games</li><li>movies</li></ul>
+      </div>
+
+      <svg class="table-sparkle" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10L12 0Z" fill="currentColor"/></svg>
+    </div>
+  </div>
+</section>
+
+<section class="about-next reveal">
+  <a class="about-cta" href="work.html"><span class="about-cta-text">See my work</span><span class="about-cta-arrow" aria-hidden="true">&rarr;</span></a>
+  <a class="about-cta" href="contact.html"><span class="about-cta-text">Say hello</span><span class="about-cta-arrow" aria-hidden="true">&rarr;</span></a>
+</section>
+</main>
+
 <footer id="contact">
-  © 2026 Angelee Marshall — Available for select projects
+  <h2><a href="contact.html">Let&rsquo;s talk</a></h2>
+  <p>Available for select projects.</p>
+  <div class="contact-links">
+    <a href="mailto:angeleeb@byu.edu">angeleeb@byu.edu</a>
+    <a href="https://www.linkedin.com/in/angelee-marshall" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="angelee-resume.pdf" download>Resume (PDF)</a>
+  </div>
+  <div class="sig reveal-fade">
+    <img class="sig-image" src="signature-red.svg" alt="Angelee Marshall’s signature" width="2048" height="548">
+  </div>
+  <small>&copy; 2026 Angelee Marshall</small>
 </footer>
 
 <script src="script.js"></script>
+<script src="about.js"></script>
 </body>
 </html>

@@ -4,42 +4,223 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Resume — Angelee Marshall</title>
+<script>try{var v=sessionStorage.getItem('pt');if(v)document.documentElement.classList.add(v==='soft'?'entering-soft':'entering')}catch(e){}</script>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10Z' fill='%23d9432e'/%3E%3C/svg%3E">
+<meta property="og:title" content="Angelee Marshall — Portfolio">
+<meta property="og:description" content="Design and technology, with people at the center.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="angelee-photo.png">
+<meta name="description" content="Design and technology, with people at the center.">
+<noscript><style>.reveal,.reveal-fade,.reveal-left,.photo-wrap,.doodle{opacity:1!important;transform:none!important;filter:none!important}.doodle-line{clip-path:none!important}.doodle-arrow-path,.doodle-arrow-head{stroke-dashoffset:0!important}</style></noscript>
 </head>
 <body>
 
-<nav>
+<nav aria-label="Main">
   <a class="logo" href="index.html#home"><span class="logo-mark"></span>ANGELEE MARSHALL</a>
   <ul>
-    <li><a href="index.html#projects"><span class="nav-num">01</span>Work</a></li>
-    <li><a href="index.html#about"><span class="nav-num">02</span>About</a></li>
-    <li><a href="resume.html" class="active"><span class="nav-num">03</span>Resume</a></li>
-    <li><a href="index.html#contact"><span class="nav-num">04</span>Contact</a></li>
+    <li><a href="work.html"><span class="nav-num">01</span>Work</a></li>
+    <li><a href="about.html"><span class="nav-num">02</span>About</a></li>
+    <li><a href="resume.html" class="active" aria-current="page"><span class="nav-num">03</span>Resume</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>Contact</a></li>
   </ul>
   <div class="nav-progress"><div class="nav-progress-bar"></div></div>
 </nav>
 
-<header class="resume-header reveal">
-  <h1>RESUME</h1>
-  <p class="resume-subtitle">Design &amp; Technology Solutions</p>
-  <a class="resume-download" href="angelee-resume.pdf" download>Download PDF ↓</a>
+<main>
+<header class="rs-hero">
+  <div class="rs-hero-inner reveal">
+    <p class="about-kicker">Resume</p>
+    <h1>RESUME</h1>
+    <p class="rs-note" aria-hidden="true">follow the thread
+      <svg viewBox="0 0 60 60"><path d="M10 6 C 44 8, 52 30, 30 52" /><path d="M30 52 L 28 36 M30 52 L 44 44" /></svg>
+    </p>
+    <p class="rs-sub">Design &amp; technology, with people at the center.</p>
+    <div class="rs-actions">
+      <a class="about-cta" href="angelee-resume.pdf" download><span class="about-cta-text">Download PDF</span><span class="about-cta-arrow" aria-hidden="true">&darr;</span></a>
+      <a class="about-cta" href="#pdf"><span class="about-cta-text">View the PDF</span><span class="about-cta-arrow" aria-hidden="true">&rarr;</span></a>
+    </div>
+  </div>
 </header>
 
-<section class="resume-viewer-section reveal">
+<section class="rs-stats" aria-label="Resume highlights">
+  <div class="rs-stats-inner reveal"><div class="rs-stat"><b><span class="count" data-to="150">150</span><i>+</i></b><span>students guided through 3D printing, scanning &amp; laser cutting</span></div><div class="rs-stat"><b><span class="count" data-to="101">101</span><i></i></b><span>Orra app users, up from 0 in 26 days</span></div><div class="rs-stat"><b><span class="count" data-to="500">500</span><i>+</i></b><span>shows performed at the Polynesian Cultural Center</span></div><div class="rs-stat"><b><span class="count" data-to="100">100</span><i>+</i></b><span>youth mentored in Polynesian dance</span></div><div class="rs-stat"><b><span class="count" data-to="200">200</span><i>%</i></b><span>growth in social reach for NorthShoreFoto</span></div></div>
+</section>
+
+<section class="rs-experience" aria-labelledby="exp-title">
+  <div class="section-intro reveal">
+    <p class="about-kicker">Experience</p>
+    <h2 id="exp-title">A thread of <em>making things.</em></h2>
+    <p>Tap a stop to open it, or filter by the side of me you want to see.</p>
+  </div>
+
+  <div class="rs-filters reveal" role="group" aria-label="Filter experience">
+    <button class="rs-chip is-on" type="button" data-filter="all" aria-pressed="true">All</button>
+    <button class="rs-chip" type="button" data-filter="tech" aria-pressed="false">Tech &amp; product</button>
+    <button class="rs-chip" type="button" data-filter="creative" aria-pressed="false">Creative</button>
+    <button class="rs-chip" type="button" data-filter="perform" aria-pressed="false">Performance &amp; leadership</button>
+  </div>
+
+  <div class="thread" data-thread>
+    <svg class="thread-svg" viewBox="0 0 24 1000" preserveAspectRatio="none" aria-hidden="true">
+      <path class="thread-base" d="M12 0 C 6 100, 18 200, 12 300 S 6 500, 12 600 S 18 800, 12 900 L 12 1000" vector-effect="non-scaling-stroke"/>
+      <path class="thread-prog" pathLength="1" d="M12 0 C 6 100, 18 200, 12 300 S 6 500, 12 600 S 18 800, 12 900 L 12 1000" vector-effect="non-scaling-stroke"/>
+    </svg>
+    <span class="thread-pen" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10L12 0Z" fill="currentColor"/></svg></span>
+    <article class="tl-item reveal is-open" data-cats="tech creative">
+      <span class="tl-node" aria-hidden="true"></span>
+      <div class="tl-card">
+        <button class="tl-head" type="button" aria-expanded="true" aria-controls="tl-body-1">
+          <span class="tl-dates">Sep 2024 &ndash; Present</span>
+          <span class="tl-role">Student Lab Technician</span>
+          <span class="tl-org">Makerspace &middot; BYU Harold B. Lee Library</span>
+          <span class="tl-stat">150+ students guided</span>
+          <span class="tl-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="tl-body" id="tl-body-1"><div class="tl-body-inner">
+          <p class="tl-loc">Provo, UT</p>
+          <ul><li>Guided 150+ students through 3D printing, scanning, and laser cutting projects, improving turnaround time and design success rates.</li></ul>
+        </div></div>
+      </div>
+    </article>
+    <article class="tl-item reveal" data-cats="tech creative">
+      <span class="tl-node" aria-hidden="true"></span>
+      <div class="tl-card">
+        <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-body-2">
+          <span class="tl-dates">Jan 2025 &ndash; Apr 2025</span>
+          <span class="tl-role">Report Manager</span>
+          <span class="tl-org">Orra Dating &middot; BYU On-Campus Internship</span>
+          <span class="tl-stat">0 &rarr; 101 users in 26 days</span>
+          <span class="tl-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="tl-body" id="tl-body-2"><div class="tl-body-inner">
+          <p class="tl-loc">Provo, UT</p>
+          <ul><li>Increased app users from 0 to 101 and 500+ active Instagram followers in 26 days by leading Jan 2025 &ndash; April 2025 marketing and social media campaigns targeted at BYU students.</li></ul>
+        </div></div>
+      </div>
+    </article>
+    <article class="tl-item reveal" data-cats="perform">
+      <span class="tl-node" aria-hidden="true"></span>
+      <div class="tl-card">
+        <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-body-3">
+          <span class="tl-dates">Mar 2022 &ndash; Dec 2023</span>
+          <span class="tl-role">Night Show Performer</span>
+          <span class="tl-org">Polynesian Cultural Center</span>
+          <span class="tl-stat">500+ shows performed</span>
+          <span class="tl-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="tl-body" id="tl-body-3"><div class="tl-body-inner">
+          <p class="tl-loc">Laie, HI</p>
+          <ul><li>Performed in 500+ shows for audiences of 2,500+, contributing to a consistent 4.8/5 guest rating for entertainment.</li></ul>
+        </div></div>
+      </div>
+    </article>
+    <article class="tl-item reveal" data-cats="perform">
+      <span class="tl-node" aria-hidden="true"></span>
+      <div class="tl-card">
+        <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-body-4">
+          <span class="tl-dates">Mar 2022 &ndash; Dec 2023</span>
+          <span class="tl-role">Tahitian Dance Assistant</span>
+          <span class="tl-org">Nonosina Hawaii &middot; Leadership &amp; Service</span>
+          <span class="tl-stat">100+ youth mentored</span>
+          <span class="tl-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="tl-body" id="tl-body-4"><div class="tl-body-inner">
+          <p class="tl-loc">Laie, HI</p>
+          <ul><li>Instructed and mentored 100+ youth in Polynesian dance techniques.</li></ul>
+        </div></div>
+      </div>
+    </article>
+    <article class="tl-item reveal" data-cats="creative tech">
+      <span class="tl-node" aria-hidden="true"></span>
+      <div class="tl-card">
+        <button class="tl-head" type="button" aria-expanded="false" aria-controls="tl-body-5">
+          <span class="tl-dates">Dec 2018 &ndash; Oct 2023</span>
+          <span class="tl-role">Small Business Owner</span>
+          <span class="tl-org">NorthShoreFoto</span>
+          <span class="tl-stat">200% social reach growth</span>
+          <span class="tl-toggle" aria-hidden="true">+</span>
+        </button>
+        <div class="tl-body" id="tl-body-5"><div class="tl-body-inner">
+          <p class="tl-loc">Laie, HI</p>
+          <ul><li>Serviced events for 50+ clients, increasing customer satisfaction through tailored consultations and staff training.</li><li>Grew social media reach by 200% and client leads by creating targeted content and redesigning web assets to reflect evolving brand identity.</li></ul>
+        </div></div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="rs-edu" aria-labelledby="edu-title">
+  <div class="section-intro reveal">
+    <p class="about-kicker">Education</p>
+    <h2 id="edu-title">Where I&rsquo;ve been <em>learning.</em></h2>
+  </div>
+  <div class="rs-edu-grid">
+    <article class="edu-card reveal" style="--r:-1.5deg">
+      <span class="tape tape--red"></span>
+      <p class="hand-caption">BYU Marriott School of Business</p>
+      <h3>Bachelor of Science in Pre-Business</h3>
+      <p class="edu-meta">Provo, UT &middot; Apr 2027 &middot; GPA 3.92/4.00</p>
+      <ul>
+        <li>Association of Information Systems Club &mdash; Content Team Member</li>
+        <li>BYU Living Legends (2024&ndash;2025)</li>
+      </ul>
+    </article>
+    <article class="edu-card reveal" style="--r:1.5deg">
+      <span class="tape"></span>
+      <p class="hand-caption">BYU&ndash;Hawaii</p>
+      <h3>Computer Science &middot; Minor in Entrepreneurship and Film</h3>
+      <p class="edu-meta">Laie, HI &middot; Jan 2023 &ndash; Dec 2024 &middot; GPA 4.0/4.0</p>
+      <ul>
+        <li>David O. McKay Academic Scholarship</li>
+        <li>Dean&rsquo;s List</li>
+        <li>Rush Limbaugh Family Foundation Scholarship</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="rs-skills" aria-labelledby="skills-title">
+  <div class="section-intro reveal">
+    <p class="about-kicker">Skills &amp; interests</p>
+    <h2 id="skills-title">My <em>toolbox.</em></h2>
+  </div>
+  <div class="skills-wrap reveal"><div class="skill-group"><p class="hand-caption">data</p><ul><li class="skill" style="--r:-3deg">SQL</li><li class="skill" style="--r:2deg">Tableau</li><li class="skill" style="--r:-2deg">Excel</li><li class="skill" style="--r:3deg">Python</li></ul></div><div class="skill-group"><p class="hand-caption">web</p><ul><li class="skill" style="--r:-2deg">HTML/CSS</li></ul></div><div class="skill-group"><p class="hand-caption">creative</p><ul><li class="skill" style="--r:2deg">Premiere Pro</li><li class="skill" style="--r:-3deg">After Effects</li><li class="skill" style="--r:3deg">Photoshop</li><li class="skill" style="--r:-2deg">Illustrator</li><li class="skill" style="--r:2deg">Lightroom</li></ul></div></div>
+  <p class="rs-interests reveal">Interests: cultural dance and performance, video, graphic design, technological innovation.</p>
+</section>
+
+<section class="resume-viewer-section reveal" id="pdf" aria-labelledby="pdf-title">
+  <div class="section-intro">
+    <p class="about-kicker">The classic version</p>
+    <h2 id="pdf-title">The full resume, <em>as a PDF.</em></h2>
+  </div>
   <div class="resume-viewer-frame">
     <object data="angelee-resume.pdf" type="application/pdf" class="resume-pdf">
       <div class="resume-fallback">
-        <p>Your PDF viewer isn't supported here.</p>
-        <a class="resume-download" href="angelee-resume.pdf" download>Download PDF ↓</a>
+        <p>Your browser can&rsquo;t show the PDF inline, but you can open or download it.</p>
+        <a class="resume-download" href="angelee-resume.pdf" target="_blank" rel="noopener">Open PDF &nearr;</a>
+        <a class="resume-download" href="angelee-resume.pdf" download>Download PDF &darr;</a>
       </div>
     </object>
   </div>
 </section>
+</main>
 
 <footer id="contact">
-  © 2026 Angelee Marshall — Available for select projects
+  <h2><a href="contact.html">Let&rsquo;s talk</a></h2>
+  <p>Available for select projects.</p>
+  <div class="contact-links">
+    <a href="mailto:angeleeb@byu.edu">angeleeb@byu.edu</a>
+    <a href="https://www.linkedin.com/in/angelee-marshall" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="angelee-resume.pdf" download>Resume (PDF)</a>
+  </div>
+  <div class="sig reveal-fade">
+    <img class="sig-image" src="signature-red.svg" alt="Angelee Marshall’s signature" width="2048" height="548">
+  </div>
+  <small>&copy; 2026 Angelee Marshall</small>
 </footer>
 
 <script src="script.js"></script>
+<script src="resume.js"></script>
 </body>
 </html>

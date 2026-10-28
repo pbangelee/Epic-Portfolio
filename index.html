@@ -4,7 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Angelee Marshall — Portfolio</title>
+<script>try{var v=sessionStorage.getItem('pt');if(v)document.documentElement.classList.add(v==='soft'?'entering-soft':'entering')}catch(e){}</script>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="projects.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 0L14 10L24 12L14 14L12 24L10 14L0 12L10 10Z' fill='%23d9432e'/%3E%3C/svg%3E">
+<meta property="og:title" content="Angelee Marshall — Portfolio">
+<meta property="og:description" content="Design and technology, with people at the center.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="angelee-photo.png">
+<meta name="description" content="Design and technology, with people at the center.">
+<noscript><style>.reveal,.reveal-fade,.reveal-left,.photo-wrap,.doodle{opacity:1!important;transform:none!important;filter:none!important}.doodle-line{clip-path:none!important}.doodle-arrow-path,.doodle-arrow-head{stroke-dashoffset:0!important}</style></noscript>
 </head>
 <body>
 
@@ -30,16 +39,16 @@
 </section>
 
 <div class="site-shell" id="home">
-  <nav>
-    <a class="logo" href="index.html"><span class="logo-mark"></span>ANGELEE MARSHALL</a>
-    <ul>
-      <li><a href="#projects"><span class="nav-num">01</span>Work</a></li>
-      <li><a href="#about"><span class="nav-num">02</span>About</a></li>
-      <li><a href="resume.html"><span class="nav-num">03</span>Resume</a></li>
-      <li><a href="#contact"><span class="nav-num">04</span>Contact</a></li>
-    </ul>
-    <div class="nav-progress"><div class="nav-progress-bar"></div></div>
-  </nav>
+  <nav aria-label="Main">
+  <a class="logo" href="index.html#home"><span class="logo-mark"></span>ANGELEE MARSHALL</a>
+  <ul>
+    <li><a href="work.html"><span class="nav-num">01</span>Work</a></li>
+    <li><a href="about.html"><span class="nav-num">02</span>About</a></li>
+    <li><a href="resume.html"><span class="nav-num">03</span>Resume</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>Contact</a></li>
+  </ul>
+  <div class="nav-progress"><div class="nav-progress-bar"></div></div>
+</nav>
 
   <div class="hero">
     <div class="headline">ANGELEE<br>MARSHALL</div>
@@ -74,31 +83,86 @@
 
   <section class="about reveal" id="about">
     <p>I bring together <span class="accent">design and technology</span> to build thoughtful, functional digital experiences with people at the center.</p>
+    <a class="about-cta" href="about.html"><span class="about-cta-text">More about me</span><span class="about-cta-arrow" aria-hidden="true">&rarr;</span></a>
   </section>
 
-  <div class="work-grid" id="projects">
-    <div class="work-card reveal">
-      <div class="num">01</div>
-      <h3>Project Name</h3>
-      <p>Short description of the work, the client, and what made it interesting.</p>
-    </div>
-    <div class="work-card reveal">
-      <div class="num">02</div>
-      <h3>Project Name</h3>
-      <p>Short description of the work, the client, and what made it interesting.</p>
-    </div>
-    <div class="work-card reveal">
-      <div class="num">03</div>
-      <h3>Project Name</h3>
-      <p>Short description of the work, the client, and what made it interesting.</p>
-    </div>
+  <section class="selected-work selected-work--home" id="projects" aria-labelledby="selected-title">
+  <div class="selection-heading">
+    <div><p class="eyebrow">A FEW THINGS I’VE BEEN PART OF</p><h2 id="selected-title">Selected <em>work.</em></h2></div>
+    <a class="home-work-link" href="work.html">Explore all work <span aria-hidden="true">↗</span></a>
   </div>
+  <p class="draft-note"><span aria-hidden="true">✳</span> Portfolio in progress · Visuals and project summaries below are placeholders.</p>
 
-  <footer class="reveal-fade" id="contact">
-    © 2026 Angelee Marshall — Available for select projects
-  </footer>
+  <div class="home-project-grid">
+  <article class="project-entry" data-project="legends">
+    <button class="project-button" type="button" data-open-project="legends" aria-haspopup="dialog" aria-label="Explore Living Legends project preview">
+      <div class="project-stage legends-stage" aria-hidden="true">
+        <div class="stage-topline"><span>BYU LIVING LEGENDS</span><span>CREATIVE DIRECTION / 01</span></div>
+        <div class="legends-type">STORIES<br>IN <i>MOTION.</i></div>
+        <div class="poster-paper"><span class="poster-label">CULTURE. CONNECTION. COMMUNITY.</span><strong>LIVING<br>LEGENDS</strong><img src="angelee-photo.png" alt="" loading="lazy"><span class="poster-bottom">EVERY MOVEMENT TELLS A STORY.</span></div>
+        <div class="legends-note">Made to move you.</div>
+        <span class="stage-edition">SOCIAL &amp; VISUAL STORYTELLING</span>
+        <span class="project-hover">Explore preview <span>↗</span></span>
+      </div>
+      <div class="project-caption"><span class="project-index">01</span><div class="project-name"><h3>Living Legends</h3><p>Bringing a story to life, on screen and on stage.</p></div><div class="project-tags"><span>Visual design</span><span>Storytelling</span></div><span class="project-open" aria-hidden="true">↗</span></div>
+    </button>
+  </article>
+
+  <article class="project-entry" data-project="makerspace">
+    <button class="project-button" type="button" data-open-project="makerspace" aria-haspopup="dialog" aria-label="Explore BYU Makerspace project preview">
+      <div class="project-stage maker-stage" aria-hidden="true">
+        <div class="stage-topline"><span>BYU MAKERSPACE</span><span>EXPERIENCE DESIGN / 02</span></div>
+        <div class="maker-type">BIG IDEAS.<br><span>SMALL<br>FIRST STEPS.</span></div>
+        <div class="maker-window"><div class="window-bar"><span class="window-dots">● ● ●</span><span>THE MAKERSPACE</span><span>✳</span></div><div class="maker-screen"><div class="screen-eyebrow">MAKE SOMETHING YOURS</div><h4>What will you<br>make today?</h4><div class="tool-options"><div class="tool-option chosen"><span class="tool-icon">▱</span><span>3D printing<small>Build layer by layer</small></span><b>↗</b></div><div class="tool-option"><span class="tool-icon">✳</span><span>Laser cutting<small>Make your mark</small></span><b>↗</b></div><div class="tool-option"><span class="tool-icon">⌁</span><span>Explore the space<small>Start with a little curiosity</small></span><b>↗</b></div></div><div class="maker-screen-foot"><span>YOUR NEXT IDEA STARTS HERE.</span><span>01 / 03</span></div></div></div>
+        <div class="maker-sticker">LESS FRICTION.<br><strong>MORE MAKING.</strong></div>
+        <span class="stage-edition">FROM “HOW?” TO “I MADE THAT.”</span>
+        <span class="project-hover">Explore preview <span>↗</span></span>
+      </div>
+      <div class="project-caption"><span class="project-index">02</span><div class="project-name"><h3>BYU Makerspace</h3><p>Making the first step feel a little easier.</p></div><div class="project-tags"><span>UX thinking</span><span>Service design</span></div><span class="project-open" aria-hidden="true">↗</span></div>
+    </button>
+  </article>
+
+  <article class="project-entry" data-project="orra">
+    <button class="project-button" type="button" data-open-project="orra" aria-haspopup="dialog" aria-label="Explore Orra Dating project preview">
+      <div class="project-stage orra-stage" aria-hidden="true">
+        <div class="stage-topline"><span>ORRA DATING</span><span>PRODUCT THINKING / 03</span></div>
+        <div class="orra-wordmark">orra</div><div class="orra-tagline">A little curiosity.<br><i>A real connection.</i></div>
+        <div class="phone phone-back"><div class="phone-status"><span>9:41</span><span>••• ▰</span></div><div class="phone-brand">orra</div><p class="phone-kicker">MORE THAN A PROFILE</p><h4>Start with<br>something<br><i>you love.</i></h4><div class="interest-cloud"><span>Live music</span><span class="interest-active">☀ Outside</span><span>Good food</span><span class="interest-active">Art &amp; design</span><span>Movie nights</span></div><div class="phone-action">Find your people</div></div>
+        <div class="phone phone-front"><div class="phone-status"><span>9:41</span><span>••• ▰</span></div><div class="phone-brand">orra</div><div class="conversation-mark">“</div><p class="phone-kicker">SKIP THE SMALL TALK</p><h4>What’s one thing<br>you could talk<br>about for hours?</h4><div class="conversation-response">For me? Probably…<span class="typing-dots"><i></i><i></i><i></i></span></div><div class="phone-action">Start a conversation</div></div>
+        <span class="stage-edition">DESIGNED AROUND CONNECTION</span>
+        <span class="project-hover">Explore preview <span>↗</span></span>
+      </div>
+      <div class="project-caption"><span class="project-index">03</span><div class="project-name"><h3>Orra Dating</h3><p>Exploring what helps people connect.</p></div><div class="project-tags"><span>Product strategy</span><span>User experience</span></div><span class="project-open" aria-hidden="true">↗</span></div>
+    </button>
+  </article>
+  </div>
+  <p class="home-swipe-hint">Swipe to explore all three projects <span aria-hidden="true">↔</span></p>
+</section>
+<dialog class="project-dialog" aria-labelledby="dialog-title">
+  <div class="dialog-top"><p class="eyebrow">PROJECT PREVIEW</p><button class="dialog-close" type="button" aria-label="Close project preview">Close <span aria-hidden="true">×</span></button></div>
+  <p class="dialog-number"></p><h2 id="dialog-title"></h2><p class="dialog-intro"></p>
+  <p class="dialog-disclaimer">Draft concept · These mockups and summaries are placeholders, not final deliverables or verified project results.</p>
+  <div class="dialog-grid"><section><h3>The direction</h3><p class="dialog-direction"></p></section><section><h3>The design question</h3><p class="dialog-question"></p></section></div>
+  <div class="dialog-next"><p>Case study in the making.</p><span>Real process, artifacts, and learnings coming next.</span></div>
+</dialog>
+
+
+  <footer id="contact">
+  <h2><a href="contact.html">Let&rsquo;s talk</a></h2>
+  <p>Available for select projects.</p>
+  <div class="contact-links">
+    <a href="mailto:angeleeb@byu.edu">angeleeb@byu.edu</a>
+    <a href="https://www.linkedin.com/in/angelee-marshall" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="angelee-resume.pdf" download>Resume (PDF)</a>
+  </div>
+  <div class="sig reveal-fade">
+    <img class="sig-image" src="signature-red.svg" alt="Angelee Marshall’s signature" width="2048" height="548">
+  </div>
+  <small>&copy; 2026 Angelee Marshall</small>
+</footer>
 </div>
 
 <script src="script.js"></script>
+<script src="projects.js"></script>
 </body>
 </html>
